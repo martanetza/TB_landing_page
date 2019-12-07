@@ -1,0 +1,27 @@
+.quotationPlaceholder {
+  empty-cells: show;
+  text-align: right;
+  height: 56px; }
+
+.quotationCol {
+  padding: 0px;
+  height: 76px;
+  align-content: flex-end; }
+
+.quotationMark {
+  text-align: right;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 76px;
+  padding: 0px;
+  height: 76px; }
+
+.testimonial-txt {
+  padding: 0px;
+  font-size: 25px; }
+
+.authorTestimonial {
+  padding: 0px;
+  font-size: 20px; }
+
+.bold {
+  font-weight: bold; }
