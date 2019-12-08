@@ -6,8 +6,9 @@
 
 .quotationCol{
     padding: 0px;
-    height: 76px;
-    align-content: flex-end;
+    display: flex;
+    align-content: flex-start;
+    width: 27px;
 }
 
 
@@ -17,6 +18,7 @@
     font-size: 76px;
     padding: 0px;
     height: 76px;
+    line-height: 70px;
 }
 
 .testimonial-txt{
@@ -32,3 +34,29 @@
 .bold{
     font-weight: bold;
 }
+
+
+@media only screen and (max-width : 991px) {
+
+.testimonialImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+    
+.testimonial-txt{
+    font-size: 15px;
+}
+
+.autorTName{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.autorJobdescription{
+    font-size: 14px;
+}
+
+}
+
