@@ -57,37 +57,58 @@
   font-family: "Futura PT", Helvetica, Arial, sans-serif;
 }
 
-#heroModule {
-  background-image: url(../../img/heromodule.PNG);
-  background-size: cover;
-  height: 100vh;
-  padding: 0 10vw 0 10vw;
-  text-align: center;
+body {
+  font-family: "Futura PT", Helvetica, Arial, sans-serif;
 }
 
-#heroModule h1 {
-  font-size: 56px;
+#illustrTxtModule h1 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 67px;
+  margin-bottom: 20px;
 }
 
-#heroModule p {
-  font-size: 20px;
-  padding: 0 15vw 0 15vw;
+#illustrTxtModule p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.highlight {
-  background-color: #F8E948;
+.illustrationSmHomepage {
+  width: 40vw;
+  max-width: 100%;
+  height: auto;
 }
 
-@media only screen and (max-width: 768px) {
-  #heroModule {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    height: 70vh;
-    padding: 0vw;
-    text-align: center;
+.illustrTxtBox {
+  padding-top: 5vw;
+}
+
+@media only screen and (max-width: 991px) {
+  .rowIllustr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #illustrTxtModule p {
+    margin-bottom: 20px;
+  }
+
+  #illustrTxtModule h1 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+
+  #illustrTxtModule img {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .illustrTxtBox {
+    padding-top: 0vw;
   }
 }
 
-/*# sourceMappingURL=hero_module.css.map */
+/*# sourceMappingURL=illustrPlusTxt_module.css.map */

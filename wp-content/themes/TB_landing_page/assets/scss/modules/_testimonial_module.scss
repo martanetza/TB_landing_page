@@ -1,0 +1,61 @@
+.testimonial {
+  .testimonialImage {
+    width: 100%;
+  }
+  .quotationPlaceholder {
+    empty-cells: show;
+    text-align: right;
+    height: 56px;
+  }
+
+  .quotationCol {
+    padding: 0px;
+    display: flex;
+    align-content: flex-start;
+    width: 27px;
+  }
+
+  .quotationMark {
+    text-align: right;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 76px;
+    padding: 0px;
+    height: 76px;
+    line-height: 70px;
+  }
+
+  .testimonial-txt {
+    padding: 0px;
+    font-size: 25px;
+  }
+
+  .authorTestimonial {
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .testimonialImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-txt {
+    font-size: 15px;
+  }
+
+  .autorTName {
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .autorJobdescription {
+    font-size: 14px;
+  }
+}
