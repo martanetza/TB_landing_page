@@ -1,0 +1,49 @@
+#illustrTxtModule h1 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 67px;
+  margin-bottom: 20px;
+}
+
+#illustrTxtModule p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.illustrationSmHomepage {
+  width: 40vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.illustrTxtBox {
+  padding-top: 5vw;
+}
+
+@media only screen and (max-width: 991px) {
+  .rowIllustr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #illustrTxtModule p {
+    margin-bottom: 20px;
+  }
+
+  #illustrTxtModule h1 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+
+  #illustrTxtModule img {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .illustrTxtBox {
+    padding-top: 0vw;
+  }
+}
