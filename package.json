@@ -1,0 +1,23 @@
+{
+  "name": "tb_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchsass": "node-sass --output-style expanded wp-content/themes/TB_landing_page/assets/scss wp-content/themes/TB_landing_page/assets/css/output.css -w"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martanetza/TB_landing_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martanetza/TB_landing_page/issues"
+  },
+  "homepage": "https://github.com/martanetza/TB_landing_page#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
