@@ -1,0 +1,77 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d2d2d2;
+  border-radius: 25px;
+  height: 224px;
+  margin: 20px;
+  padding: 0px;
+}
+
+.ctaRow {
+  width: 65%; /*If h1 would wrap on desktop version, when the screen is to narrow, width of the row can be increased*/
+  margin: 0px;
+}
+
+.cta h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cta button {
+  width: 170px;
+  height: 40px;
+  background-color: #f8e948;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+.ctaColumn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 224px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ctaColumn2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 224px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .cta h1 {
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .cta {
+    height: 270px;
+  }
+
+  .ctaColumn1 {
+    align-items: flex-start;
+    justify-content: center;
+    height: 70%;
+  }
+
+  .ctaColumn2 {
+    align-items: flex-end;
+    justify-content: center;
+    height: 30%;
+  }
+
+  .cta button {
+    font-size: 16px;
+  }
+}

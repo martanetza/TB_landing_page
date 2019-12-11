@@ -6421,5 +6421,163 @@ figure.alignnone {
     text-align: center;
   }
 }
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d2d2d2;
+  border-radius: 25px;
+  height: 224px;
+  margin: 20px;
+  padding: 0px;
+}
+
+.ctaRow {
+  width: 65%;
+  /*If h1 would wrap on desktop version, when the screen is to narrow, width of the row can be increased*/
+  margin: 0px;
+}
+
+.cta h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cta button {
+  width: 170px;
+  height: 40px;
+  background-color: #f8e948;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+.ctaColumn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 224px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ctaColumn2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 224px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .cta h1 {
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .cta {
+    height: 270px;
+  }
+
+  .ctaColumn1 {
+    align-items: flex-start;
+    justify-content: center;
+    height: 70%;
+  }
+
+  .ctaColumn2 {
+    align-items: flex-end;
+    justify-content: center;
+    height: 30%;
+  }
+
+  .cta button {
+    font-size: 16px;
+  }
+}
+.founderModule {
+  background-image: url("../../img/joakim_hero-3x.jpg");
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 451px 428px;
+  background-repeat: no-repeat;
+}
+
+#founderImg {
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 30px;
+  visibility: visible;
+}
+
+.founderModule h1 {
+  margin-top: 0px;
+  font-size: 56px;
+}
+
+.founderModule p {
+  font-size: 20px;
+}
+
+.underline {
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+  /****** 
+    optional values below 
+    ******/
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #f8ea4b;
+}
+
+@media only screen and (max-width: 991px) {
+  .underline {
+    font-size: 16px;
+  }
+
+  #zigzag {
+    display: none;
+  }
+
+  .founderModule {
+    background-image: none;
+  }
+  .founderModule p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .founderModule .row2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .founderModule h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  #founderImg {
+    max-width: 65%;
+    height: auto;
+    margin-right: 40px;
+    visibility: visible;
+  }
+}
 
 /*# sourceMappingURL=theme.css.map */
