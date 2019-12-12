@@ -6794,4 +6794,25 @@ figure.alignnone {
   margin: auto 0px 0px 0px;
 }
 
+.values-module strong {
+  background-color: #f8e948;
+  font-weight: 400;
+}
+.values-module h1 {
+  font-weight: bold;
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+.values-module p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .values-module h1 {
+    font-size: 35px;
+  }
+}
+
 /*# sourceMappingURL=theme.css.map */
