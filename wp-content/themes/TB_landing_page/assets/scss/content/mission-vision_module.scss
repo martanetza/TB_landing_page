@@ -1,0 +1,43 @@
+
+.m-v-module{ 
+    p{
+    font-size: 16px;
+    line-height: 24px;
+}
+    h1{
+        font-size: 56px;
+        font-weight: bold;
+    }
+
+    img{
+        width: 250px;
+        height: auto;
+
+    }
+}
+
+@media only screen and (max-width : 991px) {
+ 
+.m-v-module{ 
+
+        p{
+            margin-top: 30px;
+        }
+
+        h1{
+            font-size: 35px;
+            transform: rotate(-6deg);
+            margin-left: 35px;
+        }
+    
+        img{
+            transform: rotate(84deg);
+            margin-top: 35px;
+        }
+
+        .imageCol{
+            height: 250px;
+        }
+    }
+    
+}
