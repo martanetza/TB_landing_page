@@ -27,7 +27,8 @@
         <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
         </div>
         <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
-            <img src="../img/zigzag.PNG" alt="graphic" id="zigzag">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/zigzag.PNG"
+                alt="graphic" id="zigzag">
         </div>
         <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4 logo">
         </div>

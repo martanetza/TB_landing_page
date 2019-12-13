@@ -6317,6 +6317,96 @@ h3 {
   font-weight: 400;
 }
 
+.section-header h1 strong {
+  font-weight: 400;
+  background: #f8e948;
+}
+
+.footerModule {
+  border-top: 1px solid #d2d2d2;
+  padding-top: 50px;
+}
+
+.followUs {
+  text-align: center;
+}
+
+.soMEdiv {
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+.soMEdiv img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: auto;
+  margin: 10px;
+}
+
+.somePlaceholder {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+.underline {
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+  /****** 
+    optional values below 
+    ******/
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #f8ea4b;
+}
+
+.rightsReserved {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.logo img {
+  height: 75px;
+  width: auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .bottomRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .underline {
+    float: none;
+  }
+
+  .termsPrivacy {
+    text-align: center;
+  }
+
+  .soMEdiv img {
+    width: 26px;
+  }
+}
 /*
   WordPress images without caption.
   Specificity needed to avoid targting WP emoticons (.wp-smiley)
@@ -6344,8 +6434,32 @@ figure.alignnone {
   margin-right: 0;
 }
 
-.testimonial .testimonialImage {
+.testimonial {
+  margin-bottom: 141px;
+}
+.testimonial .section-header {
   width: 100%;
+  text-align: center;
+}
+.testimonial .section-header h1 {
+  font-weight: bold;
+  font-size: 56px;
+}
+.testimonial .section-header strong {
+  font-weight: bold;
+  background: #f8e948;
+  border-radius: 5px;
+}
+.testimonial div:nth-child(2) p {
+  font-size: 25px;
+  line-height: 37px;
+  margin-bottom: 44px;
+  font-style: italic;
+}
+.testimonial .testimonialImage {
+  width: 354px;
+  display: block;
+  margin: auto;
 }
 .testimonial .quotationPlaceholder {
   empty-cells: show;
@@ -6372,7 +6486,8 @@ figure.alignnone {
 }
 .testimonial .authorTestimonial {
   padding: 0px;
-  font-size: 20px;
+  font-size: 20px !important;
+  font-style: normal !important;
 }
 .testimonial .bold {
   font-weight: bold;
@@ -6399,11 +6514,43 @@ figure.alignnone {
     font-size: 14px;
   }
 }
+.yellow-line {
+  margin: auto;
+  width: 80%;
+  height: 4px;
+  background: #f8e948;
+  border-radius: 10px;
+}
+
+.yellow-line-visible {
+  display: block;
+}
+
+.yellow-line-unvisible {
+  display: none;
+}
+
 #illustrTxtModule h1 {
   font-size: 45px;
   font-weight: bold;
   line-height: 67px;
   margin-bottom: 20px;
+}
+@media (max-width: 991.98px) {
+  #illustrTxtModule h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerMbile h1 {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .headerMbile h1 {
+    display: block !important;
+  }
 }
 
 #illustrTxtModule p {
@@ -6412,9 +6559,12 @@ figure.alignnone {
 }
 
 .illustrationSmHomepage {
-  width: 40vw;
   max-width: 100%;
   height: auto;
+}
+
+.imageBox {
+  padding-right: 80px;
 }
 
 .illustrTxtBox {
@@ -6425,6 +6575,14 @@ figure.alignnone {
   .rowIllustr {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .illustrTxtBox {
+    order: 1;
+  }
+
+  .imageBox {
+    order: 2;
   }
 
   #illustrTxtModule p {
@@ -6756,6 +6914,13 @@ figure.alignnone {
   border-radius: 10px;
 }
 
+.subscribe {
+  margin-bottom: 60px;
+}
+.subscribe p {
+  margin: auto 0px 0px 0px;
+}
+
 #gform_wrapper_2 {
   margin: 0px;
 }
@@ -6790,10 +6955,6 @@ figure.alignnone {
   border-radius: 5px;
 }
 
-.subscribe p {
-  margin: auto 0px 0px 0px;
-}
-
 .values-module strong {
   background-color: #f8e948;
   font-weight: 400;
@@ -6811,6 +6972,65 @@ figure.alignnone {
 
 @media only screen and (max-width: 991px) {
   .values-module h1 {
+    font-size: 35px;
+  }
+}
+.team-row {
+  background-image: url("../../img/yellowBackground3.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.team-row img {
+  width: 100%;
+}
+
+.team-module p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.team-module h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.teamImage {
+  width: 332px;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+@media only screen and (max-width: 991px) {
+  .teamImage {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+
+  .team-row {
+    background-image: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .team-module p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team-module .bold {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .team-module h1 {
     font-size: 35px;
   }
 }

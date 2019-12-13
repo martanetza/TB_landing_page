@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 d-flex text-center">
-            <h1>Values</h1>
+            <h1 class="w-100 text-center">Values</h1>
         </div>
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
     </div>
