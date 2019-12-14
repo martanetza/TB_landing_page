@@ -12,6 +12,8 @@ if (function_exists('have_rows') && have_rows('content_modules')):
     require(get_theme_root() . '/TB_landing_page/templates/content_modules/subscribe_module.php');
     require(get_theme_root() . '/TB_landing_page/templates/content_modules/values_module.php');
     require(get_theme_root() . '/TB_landing_page/templates/content_modules/team_module.php');
+    require(get_theme_root() . '/TB_landing_page/templates/content_modules/mission-vision_module.php');
+    require(get_theme_root() . '/TB_landing_page/templates/content_modules/onboarding_module.php');
    
    endwhile;
 
