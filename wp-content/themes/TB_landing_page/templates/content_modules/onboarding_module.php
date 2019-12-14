@@ -4,6 +4,9 @@
     $step_1_image = get_sub_field('step_1_image');
     $step_2_image = get_sub_field('step_2_image');
     $step_3_image = get_sub_field('step_3_image');
+    $step_1_text = get_sub_field('step_1_text');
+    $step_2_text = get_sub_field('step_2_text');
+    $step_3_text = get_sub_field('step_3_text');
     ?>
 <section class="container-fluid onboarding-module">
     <div class="row d-flex text-center">
@@ -18,9 +21,7 @@
                     alt="step1">
             </div>
             <div class="text text-left">
-                <p>
-                    <spam class="bold">First</spam>, create your profile on talentbank.dk
-                </p>
+                <?php echo $step_1_text; ?>
             </div>
         </div>
         <!--kolumna i 2 wiersze-->
@@ -30,9 +31,7 @@
                     alt="step2">
             </div>
             <div class="text text-left row2step2">
-                <p>
-                    <spam class="bold">Then</spam> wait for a profile review
-                </p>
+                <?php echo $step_2_text; ?>
             </div>
         </div>
 
@@ -45,9 +44,7 @@
                 </div>
             </div>
             <div class="text text-left">
-                <p>
-                    <spam class="bold">Finally</spam>, once approved, you are set to go!
-                </p>
+                <?php echo $step_3_text; ?>
             </div>
         </div>
         <!--koniec kolumny 2-->

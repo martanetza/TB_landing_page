@@ -9,9 +9,7 @@
         <h1>
             <?php echo $header; ?>
         </h1>
-        <p>
-            <?php echo $text; ?>
-        </p>
+        <?php echo $text; ?>
     </div>
 
     <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In  -->

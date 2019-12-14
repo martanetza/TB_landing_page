@@ -6628,17 +6628,26 @@ figure.alignnone {
 
 @media only screen and (max-width: 768px) {
   .animation {
-    margin-top: 500px;
+    margin-top: 250px;
   }
 
   #heroModule {
+    height: fit-content;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    height: 70vh;
     padding: 0vw;
     text-align: center;
+  }
+  #heroModule .hero-txt {
+    padding: 0px;
+  }
+  #heroModule .hero-txt h1 {
+    font-size: 50px;
+  }
+  #heroModule .hero-txt :nth-child(2) {
+    padding: 0px 40px;
   }
 }
 svg {
@@ -7242,6 +7251,9 @@ svg {
     transform: rotate(284deg);
     margin: -20px 40px auto auto;
   }
+}
+.onboarding-module {
+  margin-bottom: 116px;
 }
 .onboarding-module img {
   height: 80%;

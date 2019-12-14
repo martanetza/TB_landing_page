@@ -26,16 +26,26 @@
 
 @media only screen and (max-width: 768px) {
   .animation {
-    margin-top: 500px;
+    margin-top: 250px;
   }
   #heroModule {
+    height: fit-content;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    height: 70vh;
     padding: 0vw;
     text-align: center;
+    .hero-txt {
+      padding: 0px;
+      h1 {
+        font-size: 50px;
+      }
+
+      :nth-child(2) {
+        padding: 0px 40px;
+      }
+    }
   }
 }
 
