@@ -1,0 +1,196 @@
+.footerModule2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "area1 area2 area3"
+    "area4 area5 area6"
+    "area7 area8 area9";
+
+.soMeContainer{
+    grid-area: area5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "areaTxt"
+        "areaIcons";
+
+
+.followUs{
+    grid-area: areaTxt;
+        font-size: 16px;
+        text-align: center;
+        padding: 8px 0 8px 0;
+        height: 24px;
+        }
+
+.iconsContainer{
+    grid-area: areaIcons;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    margin-top: 19px;  
+    margin-bottom: 34px;               
+
+    img{
+        width: 39px;
+        height: auto;
+        margin: 0 18px 0 18px;
+    }
+}
+}
+
+.logo-footer img{
+    width: auto;
+    height: 85px;
+    float: left;
+}
+
+.copyrights{
+    grid-area: area8;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.terms-privacy{
+    grid-area: area9;
+
+    .underline {
+        text-decoration: none; 
+        position: relative; 
+        font-size: 15px;
+        float: right;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    
+     .underline:after {
+         position: absolute;
+         content: '';
+         height: 2px;
+           /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+         bottom: -4px; 
+    
+    
+        /****** 
+        optional values below 
+        ******/
+         
+         /* center - (optional) use with adjusting width   */
+         margin: 0 auto;
+           left: 0;
+         right: 0;
+           width: 100%;
+           background: #F8EA4B;
+     }   
+}
+
+}
+
+@media only screen and (max-width : 991px) {
+
+    .footerModule2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area8 area8 area8";
+    
+        .soMeContainer{
+                grid-area: area2;
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+                grid-template-areas: 
+                "areaTxt"
+                "areaIcons"; 
+                height: 111px;       
+        
+        .followUs{
+            grid-area: areaTxt;
+                font-size: 15px;
+                text-align: center;
+                padding: 48px 0 13px 0;
+                height: 76px;
+                }
+        
+        .iconsContainer{
+            grid-area: areaIcons;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+            margin-top: 0px;  
+            margin-bottom: 0px; 
+            
+            img{
+                width: 34px;
+                height: auto;
+                margin: 0 10px 0 10px;
+            }
+        }
+        }
+    
+    .logo-footer img{
+        width: auto;
+        height: 85px;
+        float: left;
+      display: none;
+    }
+    
+    .copyrights{
+        grid-area: area8;
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 22px;
+    }
+    
+    .terms-privacy{
+        grid-area: area5;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        margin-top: 27px;
+        margin-bottom: 22px;
+         
+     
+        .underline {
+            text-decoration: none; 
+            position: relative; 
+            font-size: 15px;
+            float: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 0px;
+        }
+        
+         .underline:after {
+             position: absolute;
+             content: '';
+             height: 2px;
+               /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+             bottom: -4px; 
+        
+        
+            /****** 
+            optional values below 
+            ******/
+             
+             /* center - (optional) use with adjusting width   */
+             margin: 0 auto;
+               left: 0;
+             right: 0;
+               width: 100%;
+               background: #F8EA4B;
+         }   
+    }
+    
+    }
+  
+}
+
