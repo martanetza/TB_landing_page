@@ -1,6 +1,31 @@
 .testimonial {
-  .testimonialImage {
+  margin-bottom: 76px;
+  .section-header {
     width: 100%;
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      font-size: 56px;
+    }
+    strong {
+      font-weight: bold;
+      background: #f8e948;
+      border-radius: 5px;
+    }
+  }
+
+  div:nth-child(2) {
+    p {
+      font-size: 25px;
+      line-height: 37px;
+      margin-bottom: 44px;
+      font-style: italic;
+    }
+  }
+  .testimonialImage {
+    width: 354px;
+    display: block;
+    margin: auto;
   }
   .quotationPlaceholder {
     empty-cells: show;
@@ -31,31 +56,48 @@
 
   .authorTestimonial {
     padding: 0px;
-    font-size: 20px;
+    font-size: 20px !important;
+    font-style: normal !important;
   }
 
   .bold {
     font-weight: bold;
   }
-}
-@media only screen and (max-width: 991px) {
-  .testimonialImage {
+  @media only screen and (max-width: 991px) {
+    .testimonialImage {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-txt {
+      font-size: 15px;
+    }
+
+    .autorTName {
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .autorJobdescription {
+      font-size: 14px;
+    }
+  }
+
+  .yellow-line {
+    margin: auto;
+    width: 80%;
+    height: 4px;
+    background: #f8e948;
+    border-radius: 10px;
+  }
+
+  .yellow-line-visible {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
   }
 
-  .testimonial-txt {
-    font-size: 15px;
-  }
-
-  .autorTName {
-    font-weight: normal;
-    font-size: 16px;
-  }
-
-  .autorJobdescription {
-    font-size: 14px;
+  .yellow-line-unvisible {
+    display: none;
   }
 }

@@ -1,0 +1,206 @@
+#heroModule {
+  background-image: url(../../img/heromodule.PNG);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+#heroModule h1 {
+  font-size: 56px;
+}
+
+#heroModule p {
+  font-size: 20px;
+  padding: 0 15vw 0 15vw;
+}
+
+.highlight {
+  background-color: #f8e948;
+}
+
+.hero-txt {
+  position: absolute;
+  padding: 0px 15vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .animation {
+    margin-top: 250px;
+  }
+  #heroModule {
+    height: fit-content;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding: 0vw;
+    text-align: center;
+    .hero-txt {
+      padding: 0px;
+      h1 {
+        font-size: 50px;
+      }
+
+      :nth-child(2) {
+        padding: 0px 40px;
+      }
+    }
+  }
+}
+
+//svg
+
+svg {
+  margin: auto;
+}
+
+.cls-1,
+.cls-12,
+.cls-4,
+.cls-9 {
+  fill: none;
+}
+
+.cls-1 {
+  stroke: #f3eb3e;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke-miterlimit: 10;
+}
+
+.cls-11,
+.cls-2,
+.cls-3,
+.cls-5,
+.cls-6,
+.cls-8 {
+  fill: #fff;
+}
+
+.cls-2 {
+  stroke: #231f20;
+}
+
+.cls-10,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-3,
+.cls-6 {
+  stroke: #010101;
+}
+
+.cls-4 {
+  stroke: #f7e659;
+  stroke-width: 11px;
+}
+
+.cls-10,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-4,
+.cls-6,
+.cls-8,
+.cls-9 {
+  stroke-linejoin: round;
+}
+
+.cls-10,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-6,
+.cls-8,
+.cls-9 {
+  stroke-linecap: round;
+}
+
+.cls-10,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-6 {
+  stroke-width: 0.75px;
+}
+
+.cls-10,
+.cls-7 {
+  fill: #010101;
+}
+
+.cls-7 {
+  fill: black;
+  stroke: black;
+  stroke-width: 0.75px;
+}
+
+.cls-8,
+.cls-9 {
+  stroke: #0f0909;
+}
+
+.cls-8 {
+  stroke-width: 2px;
+}
+
+.cls-10,
+.cls-11,
+.cls-13,
+.cls-14,
+.cls-15 {
+  fill-rule: evenodd;
+}
+
+.cls-13 {
+  fill: #050303;
+}
+
+.cls-14 {
+  fill: #250d0e;
+}
+
+.cls-15 {
+  fill: #0b0606;
+}
+
+.cls-3 {
+  opacity: 0;
+}
+
+.cls-16 {
+  fill: white;
+}
+
+.hand {
+  transform-origin: center;
+}
+
+.cls-13a {
+  opacity: 0;
+}
+
+.cls-8 {
+  opacity: 0;
+}
+
+/* 
+            .cls-4 {
+                stroke-width: 17px;
+                stroke-dasharray: 1;
+                stroke-dashoffset: 1;
+                fill: none;
+                stroke-miterlimit: 10;
+            } */

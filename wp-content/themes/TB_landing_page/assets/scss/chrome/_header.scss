@@ -1,0 +1,42 @@
+.banner {
+  font-weight: 400;
+  margin-bottom: 40px;
+  background-color: white;
+  .container {
+    padding: 0px;
+    height: 100%;
+  }
+
+  display: flex;
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  nav li:not(.menu-log-in):not(.menu-join):hover,
+  nav a:not(.menu-log-in):not(.menu-join):active {
+    -webkit-box-shadow: 0px 3px 0px -1px rgba(247, 230, 89, 1);
+    -moz-box-shadow: 0px 3px 0px -1px rgba(247, 230, 89, 1);
+    box-shadow: 0px 3px 0px -1px rgba(247, 230, 89, 1);
+    border-radius: 0px;
+  }
+
+  nav .menu-homepage [aria-current],
+  nav .menu-student-list [aria-current],
+  nav .menu-edit-profile [aria-current] {
+    -webkit-box-shadow: 0px 3px 0px -1px rgba(247, 230, 89, 1);
+    -moz-box-shadow: 0px 3px 0px -1px rgba(247, 230, 89, 1);
+    box-shadow: 0px 3px 0px -1px rgba(247, 230, 89, 1);
+    border-radius: 0px;
+  }
+}
+
+.logo {
+  height: 85px;
+  @include media-breakpoint-down(md) {
+    height: 59.12px;
+  }
+}
