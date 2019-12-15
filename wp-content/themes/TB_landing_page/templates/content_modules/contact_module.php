@@ -31,12 +31,12 @@
                     <?php echo $image; ?>
                 </div>
             </div>
-            <div class="row">
+            <div class="row subscribe-desktop">
                 <div class="col-12">
                     <?php echo $text_subscribe; ?>
                 </div>
             </div>
-            <div class="row">
+            <div class="row subscribe-desktop">
                 <div class="col-12">
                     <?php gravity_form('Subscribe', false, false, false, '', false); ?>
                 </div>
@@ -49,9 +49,17 @@
                     <?php gravity_form('Contact', false, false, false, '', false); ?>
                 </div>
             </div>
-
         </div>
-
+    </div>
+    <div class="row subscribe-mobile">
+        <div class="col-12">
+            <?php echo $text_subscribe; ?>
+        </div>
+    </div>
+    <div class="row subscribe-mobile">
+        <div class="col-12">
+            <?php gravity_form('Subscribe', false, false, false, '', false); ?>
+        </div>
     </div>
 </section>
 <?php endif;

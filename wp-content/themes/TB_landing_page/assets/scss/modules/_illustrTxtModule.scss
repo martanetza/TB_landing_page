@@ -3,18 +3,18 @@
   font-weight: bold;
   line-height: 67px;
   margin-bottom: 20px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     display: none;
   }
 }
 .headerMbile {
   h1 {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       display: none;
     }
   }
   h1 {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       display: block !important;
     }
   }
@@ -33,10 +33,12 @@
 }
 
 .illustrTxtBox {
-  padding-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .rowIllustr {
     display: flex;
     flex-direction: column-reverse;

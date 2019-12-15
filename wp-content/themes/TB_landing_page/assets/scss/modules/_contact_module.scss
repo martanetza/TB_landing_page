@@ -4,6 +4,9 @@
     font-weight: 900;
     font-size: 56px;
     line-height: 80px;
+    @include media-breakpoint-down(sm) {
+      font-size: 35px;
+    }
   }
 }
 .text-container {
@@ -66,6 +69,10 @@
 #gform_wrapper_1 {
   padding-left: 50px;
   margin-top: 0px;
+  @include media-breakpoint-down(sm) {
+    padding-left: 0px;
+    margin-top: 41px;
+  }
   .gfield_label {
     margin: 0px;
     font-weight: 400;
@@ -88,6 +95,9 @@
     #field_1_3 {
       width: 50%;
       margin-top: 0px;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
       input {
         height: 58px;
       }
@@ -95,6 +105,9 @@
     #field_1_4 {
       width: 50%;
       margin-top: 0px;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
       input {
         height: 58px;
       }
@@ -118,5 +131,22 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
     }
+  }
+}
+.subscribe-mobile p {
+  border-top: 1px solid #d2d2d2;
+  padding-top: 40px;
+}
+.subscribe-mobile #gform_wrapper_2 {
+  margin-bottom: 53px;
+}
+.subscribe-mobile {
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+.subscribe-desktop {
+  @include media-breakpoint-down(sm) {
+    display: none;
   }
 }
