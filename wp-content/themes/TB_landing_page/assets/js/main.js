@@ -120,7 +120,7 @@ tl_hand.to(path, 0.3, {
   transformOrigin: "center"
 });
 tl_hand.to(".cls-7", 0.1, {
-  fill: "#f4e912"
+  fill: "#f7e659"
 });
 tl_hand.to(path, 3, {
   bezier: {
@@ -170,3 +170,11 @@ TweenMax.to(".hand", 1, {
   yoyo: true,
   ease: Power1.easeOut
 });
+
+//change color header
+
+document
+  .querySelector(".navbar-header button")
+  .addEventListener("click", () => {
+    document.querySelector(".navbar-header").classList.toggle("nav-bg-color");
+  });
