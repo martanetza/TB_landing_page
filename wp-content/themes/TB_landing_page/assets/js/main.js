@@ -73,56 +73,62 @@ let allObj = document.querySelectorAll(
 );
 let i = 0;
 let value = 0;
+
 while (value < 5) {
   i++;
   value++;
-  TweenMax.to(allObj[i], 8, {
+
+  TweenMax.to(allObj[i], 4, {
     delay: i,
     y: "-=150",
-    opacity: 0,
-    repeat: 1
+    opacity: 0
   });
 }
+
 var path = document.querySelector(".cls-8");
 var path_road = document.querySelector(".cls-4");
 var l = path_road.getTotalLength();
+
 // TweenMax.set(path, { strokeDasharray: l });
 // TweenMax.fromTo(path, 5, { strokeDashoffset: l }, { strokeDashoffset: 0 });
+
 var tl_hand = new TimelineMax({
   repeat: 0,
   repeatDelay: 0,
-  delay: 15
+  delay: 3
 });
-tl_hand.to(path, 5, {
+
+tl_hand.to(path, 1, {
   opacity: 1
 });
-tl_hand.to(path, 0.5, {
-  x: -550,
-  y: -250
-});
+
 tl_hand.to(path, 0.3, {
   rotation: 15,
   yoyo: true,
   repeat: 8,
   transformOrigin: "center"
 });
-tl_hand.to(".cls-3", 2, {
+
+tl_hand.to(".cls-3", 1, {
   opacity: 1
 });
-tl_hand.to(".cls-2", 2, {
+tl_hand.to(".cls-2", 1, {
   opacity: 0.3
 });
+
 TweenMax.set(path_road, { strokeDasharray: l });
-tl_hand.fromTo(path_road, 2, { strokeDashoffset: l }, { strokeDashoffset: 0 });
+tl_hand.fromTo(path_road, 1, { strokeDashoffset: l }, { strokeDashoffset: 0 });
 tl_hand.to(path, 0.3, {
   rotation: 180,
   yoyo: false,
   transformOrigin: "center"
 });
+
 tl_hand.to(".cls-7", 0.1, {
-  fill: "#f7e659"
+  fill: "#f4e912"
 });
-tl_hand.to(path, 3, {
+
+tl_hand.to(path, 1, {
   bezier: {
     values: [
       { x: -600, y: -165 },
@@ -141,15 +147,16 @@ tl_hand.to(path, 3, {
   },
   ease: Linear.easeNone
 });
-tl_hand.to(path, 2, {
+tl_hand.to(path, 1, {
   opacity: 0
 });
-tl_hand.to(".cls-13a", 1, {
+tl_hand.to(".cls-13a", 0.2, {
   opacity: 1
 });
-tl_hand.to(".cls-13", 1, {
+tl_hand.to(".cls-13", 0.2, {
   opacity: 0
 });
+
 TweenMax.to(".up", 1, {
   x: -1,
   y: -1,
@@ -164,6 +171,7 @@ TweenMax.to(".down", 1, {
   repeatDelay: 2,
   ease: Power1.easeOut
 });
+
 TweenMax.to(".hand", 1, {
   y: -120,
   repeat: 25,
