@@ -1,13 +1,26 @@
 .founderModule {
-  background-image: url("../../img/joakim_hero-3x.jpg");
-  background-position-x: right;
-  background-position-y: top;
-  background-size: 451px 428px;
-  background-repeat: no-repeat;
+  margin-bottom: 88px;
+  .row2 {
+    margin-bottom: 138px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.desktop-header {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.mobile-header {
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
 }
 
 #founderImg {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 30px;
   visibility: visible;
@@ -15,7 +28,7 @@
 
 .founderModule {
   h1 {
-    margin-top: 0px;
+    margin-bottom: 53px;
     font-size: 56px;
   }
 }
@@ -77,13 +90,14 @@
     h1 {
       font-size: 35px;
       text-align: center;
+      margin: 0px;
     }
   }
 
   #founderImg {
     max-width: 65%;
     height: auto;
-    margin-right: 40px;
+    margin: auto auto 30px auto;
     visibility: visible;
   }
 }

@@ -1,3 +1,7 @@
+#illustrTxtModule {
+  margin-bottom: 109px;
+}
+
 #illustrTxtModule h1 {
   font-size: 45px;
   font-weight: bold;
@@ -28,8 +32,35 @@
   max-width: 100%;
   height: auto;
 }
-.imageBox {
+.imageBox-left-padding {
+  padding-left: 80px;
+  padding-right: 60px;
+  @include media-breakpoint-down(sm) {
+    padding: 15px;
+  }
+}
+.imageBox-right-padding {
+  padding-left: 60px;
   padding-right: 80px;
+  @include media-breakpoint-down(sm) {
+    padding: 15px;
+  }
+}
+.how-it-works {
+  .imageBox-right-padding {
+    padding-left: 80px;
+    padding-right: 0px;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+    }
+  }
+  .imageBox-left-padding {
+    padding-left: 0px;
+    padding-right: 80px;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+    }
+  }
 }
 
 .illustrTxtBox {

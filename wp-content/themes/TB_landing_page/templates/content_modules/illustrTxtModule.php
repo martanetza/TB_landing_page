@@ -5,11 +5,11 @@
     $image = get_sub_field('image');
     $image_placement = get_sub_field('image_placement');
     if ($image_placement == 'Left'):
-        //  $text_padding_cls = "text-container-padding-left";
+        $image_padding = 'imageBox-left-padding';
         $order_image = "order-1";
         $order_text = 'order-2';
          else:
-        //  $text_padding_cls = "text-container-padding-right";
+        $image_padding = 'imageBox-right-padding';
         $order_image = "order-2";
         $order_text = 'order-1';
         endif;
@@ -34,7 +34,7 @@
 
         </div>
         <div
-            class="col-xs-12 col-sm-12 col-md-7 col-lg-7 imageBox <?php echo $order_image; ?>">
+            class="col-xs-12 col-sm-12 col-md-7 col-lg-7 imageBox <?php echo $order_image; ?> <?php echo $image_padding; ?>">
             <img src="<?php echo $image['sizes']['large']; ?>"
                 alt="illustration" class="illustrationSmHomepage">
         </div>

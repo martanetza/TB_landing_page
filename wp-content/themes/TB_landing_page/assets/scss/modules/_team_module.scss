@@ -1,4 +1,8 @@
 .team-module {
+  margin-bottom: 165px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 93px;
+  }
   .team-row {
     background-image: url("../../img/yellowBackground3.png");
     background-position: bottom;

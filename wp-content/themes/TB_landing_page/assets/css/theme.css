@@ -6761,6 +6761,10 @@ figure.alignnone {
   display: none;
 }
 
+#illustrTxtModule {
+  margin-bottom: 109px;
+}
+
 #illustrTxtModule h1 {
   font-size: 45px;
   font-weight: bold;
@@ -6794,8 +6798,43 @@ figure.alignnone {
   height: auto;
 }
 
-.imageBox {
+.imageBox-left-padding {
+  padding-left: 80px;
+  padding-right: 60px;
+}
+@media (max-width: 767.98px) {
+  .imageBox-left-padding {
+    padding: 15px;
+  }
+}
+
+.imageBox-right-padding {
+  padding-left: 60px;
   padding-right: 80px;
+}
+@media (max-width: 767.98px) {
+  .imageBox-right-padding {
+    padding: 15px;
+  }
+}
+
+.how-it-works .imageBox-right-padding {
+  padding-left: 80px;
+  padding-right: 0px;
+}
+@media (max-width: 767.98px) {
+  .how-it-works .imageBox-right-padding {
+    padding: 15px;
+  }
+}
+.how-it-works .imageBox-left-padding {
+  padding-left: 0px;
+  padding-right: 80px;
+}
+@media (max-width: 767.98px) {
+  .how-it-works .imageBox-left-padding {
+    padding: 15px;
+  }
 }
 
 .illustrTxtBox {
@@ -7127,22 +7166,38 @@ svg {
   }
 }
 .founderModule {
-  background-image: url("../../img/joakim_hero-3x.jpg");
-  background-position-x: right;
-  background-position-y: top;
-  background-size: 451px 428px;
-  background-repeat: no-repeat;
+  margin-bottom: 88px;
+}
+.founderModule .row2 {
+  margin-bottom: 138px;
+}
+@media (max-width: 767.98px) {
+  .founderModule .row2 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .desktop-header {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 #founderImg {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 30px;
   visibility: visible;
 }
 
 .founderModule h1 {
-  margin-top: 0px;
+  margin-bottom: 53px;
   font-size: 56px;
 }
 
@@ -7197,12 +7252,13 @@ svg {
   .founderModule h1 {
     font-size: 35px;
     text-align: center;
+    margin: 0px;
   }
 
   #founderImg {
     max-width: 65%;
     height: auto;
-    margin-right: 40px;
+    margin: auto auto 30px auto;
     visibility: visible;
   }
 }
@@ -7427,6 +7483,14 @@ svg {
   border-radius: 5px;
 }
 
+.values-module {
+  margin-bottom: 126px;
+}
+@media (max-width: 767.98px) {
+  .values-module {
+    margin-bottom: 40px;
+  }
+}
 .values-module strong {
   background-color: #f8e948;
   font-weight: 400;
@@ -7445,6 +7509,14 @@ svg {
 @media only screen and (max-width: 991px) {
   .values-module h1 {
     font-size: 35px;
+  }
+}
+.team-module {
+  margin-bottom: 165px;
+}
+@media (max-width: 767.98px) {
+  .team-module {
+    margin-bottom: 93px;
   }
 }
 .team-module .team-row {
@@ -7501,6 +7573,14 @@ svg {
   }
 }
 
+.m-v-module {
+  margin-bottom: 129px;
+}
+@media (max-width: 767.98px) {
+  .m-v-module {
+    margin-bottom: 50px;
+  }
+}
 .m-v-module p {
   font-size: 16px;
   line-height: 24px;
