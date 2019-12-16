@@ -1,9 +1,16 @@
 #heroModule {
-  background-image: url(../../img/heromodule.PNG);
-  background-size: cover;
   height: 100vh;
   text-align: center;
   position: relative;
+  margin-bottom: 288px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 117px;
+  }
+  strong {
+    font-weight: 400;
+    background: #f8e948;
+    border-radius: 5px;
+  }
 }
 
 #heroModule h1 {
@@ -15,13 +22,12 @@
   padding: 0 15vw 0 15vw;
 }
 
-.highlight {
-  background-color: #f8e948;
-}
-
 .hero-txt {
   position: absolute;
-  padding: 0px 15vw;
+  padding: 0px 10vw;
+  :nth-child(2) {
+    padding: 0px 80px;
+  }
 }
 
 @media only screen and (max-width: 768px) {

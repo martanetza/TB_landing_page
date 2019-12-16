@@ -6374,9 +6374,9 @@ h3 {
   box-shadow: 0px 3px 0px -1px #f7e659;
   border-radius: 0px;
 }
-.banner nav .menu-homepage [aria-current],
-.banner nav .menu-student-list [aria-current],
-.banner nav .menu-edit-profile [aria-current] {
+.banner nav .menu-how-it-works [aria-current],
+.banner nav .menu-about [aria-current],
+.banner nav .menu-blog [aria-current] {
   -webkit-box-shadow: 0px 3px 0px -1px #f7e659;
   -moz-box-shadow: 0px 3px 0px -1px #f7e659;
   box-shadow: 0px 3px 0px -1px #f7e659;
@@ -6681,6 +6681,12 @@ figure.alignnone {
 .testimonial .section-header h1 {
   font-weight: bold;
   font-size: 56px;
+  margin-bottom: 89px;
+}
+@media (max-width: 767.98px) {
+  .testimonial .section-header h1 {
+    margin-bottom: 49px;
+  }
 }
 .testimonial .section-header strong {
   font-weight: bold;
@@ -6692,6 +6698,13 @@ figure.alignnone {
   line-height: 37px;
   margin-bottom: 44px;
   font-style: italic;
+}
+@media (max-width: 767.98px) {
+  .testimonial div:nth-child(2) p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
 }
 .testimonial .testimonialImage {
   width: 354px;
@@ -6730,18 +6743,23 @@ figure.alignnone {
   font-weight: bold;
 }
 @media only screen and (max-width: 991px) {
+  .testimonial .img-box {
+    order: 1 !important;
+  }
+  .testimonial .txt-box {
+    order: 2 !important;
+  }
   .testimonial .testimonialImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-  }
-  .testimonial .testimonial-txt {
-    font-size: 15px;
+    width: 70%;
   }
   .testimonial .autorTName {
-    font-weight: normal;
     font-size: 16px;
+    width: 100%;
+    display: block;
   }
   .testimonial .autorJobdescription {
     font-size: 14px;
@@ -6763,6 +6781,20 @@ figure.alignnone {
 
 #illustrTxtModule {
   margin-bottom: 109px;
+}
+#illustrTxtModule .section-header {
+  width: 100%;
+  text-align: center;
+}
+#illustrTxtModule .section-header h1 {
+  font-weight: bold;
+  font-size: 56px;
+  margin-bottom: 89px;
+}
+@media (max-width: 767.98px) {
+  #illustrTxtModule .section-header h1 {
+    margin-bottom: 49px;
+  }
 }
 
 #illustrTxtModule h1 {
@@ -6879,11 +6911,20 @@ figure.alignnone {
   }
 }
 #heroModule {
-  background-image: url(../../img/heromodule.PNG);
-  background-size: cover;
   height: 100vh;
   text-align: center;
   position: relative;
+  margin-bottom: 288px;
+}
+@media (max-width: 767.98px) {
+  #heroModule {
+    margin-bottom: 117px;
+  }
+}
+#heroModule strong {
+  font-weight: 400;
+  background: #f8e948;
+  border-radius: 5px;
 }
 
 #heroModule h1 {
@@ -6895,13 +6936,12 @@ figure.alignnone {
   padding: 0 15vw 0 15vw;
 }
 
-.highlight {
-  background-color: #f8e948;
-}
-
 .hero-txt {
   position: absolute;
-  padding: 0px 15vw;
+  padding: 0px 10vw;
+}
+.hero-txt :nth-child(2) {
+  padding: 0px 80px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -7262,6 +7302,9 @@ svg {
     visibility: visible;
   }
 }
+.contact {
+  margin-bottom: 70px;
+}
 .contact h1 {
   text-align: center;
   font-weight: 900;
@@ -7520,9 +7563,9 @@ svg {
   }
 }
 .team-module .team-row {
-  background-image: url("../../img/yellowBackground3.png");
+  background-image: url("../img/Rectangle40.png");
   background-position: bottom;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .team-module .team-row img {

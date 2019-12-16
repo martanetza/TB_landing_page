@@ -6,6 +6,10 @@
     h1 {
       font-weight: bold;
       font-size: 56px;
+      margin-bottom: 89px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 49px;
+      }
     }
     strong {
       font-weight: bold;
@@ -20,6 +24,11 @@
       line-height: 37px;
       margin-bottom: 44px;
       font-style: italic;
+      @include media-breakpoint-down(sm) {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 50px;
+      }
     }
   }
   .testimonialImage {
@@ -64,20 +73,25 @@
     font-weight: bold;
   }
   @media only screen and (max-width: 991px) {
+    .img-box {
+      order: 1 !important;
+    }
+    .txt-box {
+      order: 2 !important;
+    }
+
     .testimonialImage {
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 20px;
-    }
-
-    .testimonial-txt {
-      font-size: 15px;
+      width: 70%;
     }
 
     .autorTName {
-      font-weight: normal;
       font-size: 16px;
+      width: 100%;
+      display: block;
     }
 
     .autorJobdescription {

@@ -30,16 +30,16 @@
     </div>
     <div class="row">
         <div
-            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center <?php echo $order_image; ?>">
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center <?php echo $order_image; ?> img-box">
             <img src="<?php echo $image['sizes']['large']; ?>"
                 class="testimonialImage">
         </div>
 
         <div
-            class="col-xs-11 col-sm-11 col-md-6 col-lg-6 <?php echo $order_text; ?> ">
-            <p class="testimonial-txt">
+            class="col-xs-11 col-sm-11 col-md-6 col-lg-6 <?php echo $order_text; ?> txt-box">
+            <div class="testimonial-txt">
                 <?php echo $testimonial_text; ?>
-            </p>
+            </div>
             <p class="authorTestimonial">
                 <span class="bold autorTName"><?php echo $author; ?></span>
                 <span class="autorJobdescription"><?php echo $author_job_description; ?></span>

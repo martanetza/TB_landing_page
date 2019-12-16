@@ -1,5 +1,6 @@
 <?php if (get_row_layout() == 'text_and_image_module') : ?>
 <?php
+    $section_header = get_sub_field('section_header');
     $header = get_sub_field('header');
     $text = get_sub_field('text');
     $image = get_sub_field('image');
@@ -16,6 +17,12 @@
 ?>
 
 <section id="illustrTxtModule" class="container-fluid">
+    <div class="row">
+        <div class="section-header col-12">
+            <h1> <?php if ($section_header): echo $section_header; endif; ?>
+            </h1>
+        </div>
+    </div>
     <div class="row headerMbile">
         <div class="col-12">
             <h1>

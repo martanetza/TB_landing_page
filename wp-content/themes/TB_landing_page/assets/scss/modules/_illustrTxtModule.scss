@@ -1,5 +1,17 @@
 #illustrTxtModule {
   margin-bottom: 109px;
+  .section-header {
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      font-size: 56px;
+      margin-bottom: 89px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 49px;
+      }
+    }
+  }
 }
 
 #illustrTxtModule h1 {
