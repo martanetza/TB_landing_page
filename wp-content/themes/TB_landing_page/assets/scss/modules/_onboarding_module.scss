@@ -1,9 +1,22 @@
 .onboarding-module {
   margin-bottom: 116px;
   img {
-    height: 80%;
+    width: 80%;
     display: block;
     margin: auto;
+  }
+
+  .rowStep2 {
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+  .rowStep3 {
+    img {
+      width: 70%;
+      height: auto;
+    }
   }
   p {
     font-size: 25px;
@@ -32,7 +45,7 @@
 
   .rowStep3 {
     height: 500px;
-    padding-top: 135px;
+    padding-top: 170px;
   }
 
   .txtRow {

@@ -7699,9 +7699,17 @@ svg {
   margin-bottom: 116px;
 }
 .onboarding-module img {
-  height: 80%;
+  width: 80%;
   display: block;
   margin: auto;
+}
+.onboarding-module .rowStep2 img {
+  width: 50%;
+  height: auto;
+}
+.onboarding-module .rowStep3 img {
+  width: 70%;
+  height: auto;
 }
 .onboarding-module p {
   font-size: 25px;
@@ -7726,7 +7734,7 @@ svg {
 }
 .onboarding-module .rowStep3 {
   height: 500px;
-  padding-top: 135px;
+  padding-top: 170px;
 }
 .onboarding-module .txtRow {
   padding: 10px;
@@ -7830,6 +7838,7 @@ svg {
   background-color: white;
   border: solid 1px black;
   border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media only screen and (max-width: 991px) {
