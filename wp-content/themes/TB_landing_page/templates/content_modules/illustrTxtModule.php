@@ -18,7 +18,8 @@
 
 <section id="illustrTxtModule" class="container-fluid">
     <div class="row">
-        <div class="section-header col-12">
+        <div
+            class="section-header col-12 <?php if (empty($section_header)): echo 'd-none'; endif; ?>">
             <h1> <?php if ($section_header): echo $section_header; endif; ?>
             </h1>
         </div>

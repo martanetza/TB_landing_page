@@ -6337,7 +6337,7 @@ h3 {
 @font-face {
   font-family: "Futura PT Book";
   src: url("../fonts/futura/futura_medium_bt-webfont.woff2") format("woff2"), url("../fonts/futura/futura_medium_bt-webfont.woff") format("woff");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 * {
@@ -6561,7 +6561,7 @@ h1 {
   .navbar-collapse .navbar-nav {
     height: 100%;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   .navbar-collapse .navbar-nav li {
     display: flex;
@@ -6580,7 +6580,6 @@ h1 {
 }
 .navbar-nav * {
   border-radius: 10px;
-  width: 100px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -6694,6 +6693,12 @@ figure.alignnone {
   background: #f8e948;
   border-radius: 5px;
 }
+.testimonial .autorTName {
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  line-height: 20px;
+}
 .testimonial div:nth-child(2) p {
   font-size: 25px;
   line-height: 37px;
@@ -6734,11 +6739,15 @@ figure.alignnone {
 .testimonial .testimonial-txt {
   padding: 0px;
   font-size: 25px;
+  font-style: italic;
 }
 .testimonial .authorTestimonial {
   padding: 0px;
   font-size: 20px !important;
   font-style: normal !important;
+}
+.testimonial .autorJobdescription {
+  line-height: 20px;
 }
 .testimonial .bold {
   font-weight: bold;
@@ -6757,17 +6766,12 @@ figure.alignnone {
     margin-bottom: 20px;
     width: 70%;
   }
-  .testimonial .autorTName {
-    font-size: 16px;
-    width: 100%;
-    display: block;
-  }
   .testimonial .autorJobdescription {
     font-size: 14px;
   }
 }
 .testimonial .yellow-line {
-  margin: auto;
+  margin: 76px auto auto auto;
   width: 80%;
   height: 4px;
   background: #f8e948;
@@ -6851,6 +6855,9 @@ figure.alignnone {
   }
 }
 
+.how-it-works #illustrTxtModule {
+  margin-bottom: 189px;
+}
 .how-it-works .imageBox-right-padding {
   padding-left: 80px;
   padding-right: 0px;
@@ -7287,10 +7294,10 @@ svg {
     margin-bottom: 20px;
   }
   .founderModule .row2 div:nth-child(1) {
-    order: 2;
+    order: 3;
   }
   .founderModule .row2 div:nth-child(2) {
-    order: 1;
+    order: 2;
   }
   .founderModule h1 {
     font-size: 35px;
@@ -7780,7 +7787,7 @@ svg {
   font-size: 56px;
   width: 100%;
   font-weight: bold;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
 .jobtypesModule .row2-col1 {
   font-size: 25px;
