@@ -6320,7 +6320,7 @@ h3 {
   font-family: "Futura PT";
   src: url("../fonts/futura/futura_heavy_italic_font-webfont.woff2") format("woff2"), url("../fonts/futura/futura_heavy_italic_font-webfont.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: "Futura PT";
@@ -6335,19 +6335,18 @@ h3 {
   font-style: italic;
 }
 @font-face {
-  font-family: "Futura PT";
+  font-family: "Futura PT Book";
   src: url("../fonts/futura/futura_medium_bt-webfont.woff2") format("woff2"), url("../fonts/futura/futura_medium_bt-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 * {
   font-family: "Futura PT", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-style: normal;
 }
 
-.section-header h1 strong {
-  font-weight: 400;
-  background: #f8e948;
+h1 {
+  font-weight: bold;
 }
 
 .banner {
@@ -6556,6 +6555,8 @@ h3 {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 50%;
+    font-weight: 600;
+    font-style: normal;
   }
   .navbar-collapse .navbar-nav {
     height: 100%;
@@ -6914,7 +6915,6 @@ figure.alignnone {
   height: 100vh;
   text-align: center;
   position: relative;
-  margin-bottom: 288px;
 }
 @media (max-width: 767.98px) {
   #heroModule {
@@ -6923,6 +6923,11 @@ figure.alignnone {
 }
 #heroModule strong {
   font-weight: 400;
+  background: #f8e948;
+  border-radius: 5px;
+}
+#heroModule h1 strong {
+  font-weight: bold;
   background: #f8e948;
   border-radius: 5px;
 }
@@ -7230,10 +7235,9 @@ svg {
 }
 
 #founderImg {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin-bottom: 30px;
-  visibility: visible;
 }
 
 .founderModule h1 {
@@ -7277,17 +7281,16 @@ svg {
     display: none;
   }
 
-  .founderModule {
-    background-image: none;
-  }
   .founderModule p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
   }
-  .founderModule .row2 {
-    display: flex;
-    flex-direction: column-reverse;
+  .founderModule .row2 div:nth-child(1) {
+    order: 2;
+  }
+  .founderModule .row2 div:nth-child(2) {
+    order: 1;
   }
   .founderModule h1 {
     font-size: 35px;
@@ -7296,10 +7299,9 @@ svg {
   }
 
   #founderImg {
-    max-width: 65%;
+    width: 65%;
     height: auto;
     margin: auto auto 30px auto;
-    visibility: visible;
   }
 }
 .contact {
@@ -7536,7 +7538,7 @@ svg {
 }
 .values-module strong {
   background-color: #f8e948;
-  font-weight: 400;
+  font-weight: 600;
 }
 .values-module h1 {
   font-weight: bold;

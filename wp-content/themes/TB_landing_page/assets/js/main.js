@@ -78,14 +78,14 @@ while (value < 5) {
   i++;
   value++;
 
-  TweenMax.to(allObj[i], 4, {
+  TweenMax.to(allObj[i], 8, {
     delay: i,
     y: "-=150",
     opacity: 0
   });
 }
 
-var path = document.querySelector(".cls-8");
+// var path = document.querySelector(".cls-8");
 var path_road = document.querySelector(".cls-4");
 var l = path_road.getTotalLength();
 
@@ -95,19 +95,19 @@ var l = path_road.getTotalLength();
 var tl_hand = new TimelineMax({
   repeat: 0,
   repeatDelay: 0,
-  delay: 3
+  delay: 6
 });
 
-tl_hand.to(path, 1, {
-  opacity: 1
-});
+// tl_hand.to(path, 1, {
+//   opacity: 1
+// });
 
-tl_hand.to(path, 0.3, {
-  rotation: 15,
-  yoyo: true,
-  repeat: 8,
-  transformOrigin: "center"
-});
+// tl_hand.to(path, 0.3, {
+//   rotation: 15,
+//   yoyo: true,
+//   repeat: 8,
+//   transformOrigin: "center"
+// });
 
 tl_hand.to(".cls-3", 1, {
   opacity: 1
@@ -118,38 +118,38 @@ tl_hand.to(".cls-2", 1, {
 
 TweenMax.set(path_road, { strokeDasharray: l });
 tl_hand.fromTo(path_road, 1, { strokeDashoffset: l }, { strokeDashoffset: 0 });
-tl_hand.to(path, 0.3, {
-  rotation: 180,
-  yoyo: false,
-  transformOrigin: "center"
-});
+// tl_hand.to(path, 0.3, {
+//   rotation: 180,
+//   yoyo: false,
+//   transformOrigin: "center"
+// });
 
 tl_hand.to(".cls-7", 0.1, {
   fill: "#f4e912"
 });
 
-tl_hand.to(path, 1, {
-  bezier: {
-    values: [
-      { x: -600, y: -165 },
-      { x: -550, y: -175 },
-      { x: -500, y: -185 },
-      { x: -450, y: -195 },
-      { x: -400, y: -210 },
-      { x: -350, y: -230 },
-      { x: -300, y: -245 },
-      { x: -250, y: -265 },
-      { x: -200, y: -295 },
-      { x: -150, y: -350 },
-      { x: -100, y: -450 }
-    ],
-    type: "thru"
-  },
-  ease: Linear.easeNone
-});
-tl_hand.to(path, 1, {
-  opacity: 0
-});
+// tl_hand.to(path, 1, {
+//   bezier: {
+//     values: [
+//       { x: -600, y: -165 },
+//       { x: -550, y: -175 },
+//       { x: -500, y: -185 },
+//       { x: -450, y: -195 },
+//       { x: -400, y: -210 },
+//       { x: -350, y: -230 },
+//       { x: -300, y: -245 },
+//       { x: -250, y: -265 },
+//       { x: -200, y: -295 },
+//       { x: -150, y: -350 },
+//       { x: -100, y: -450 }
+//     ],
+//     type: "thru"
+//   },
+//   ease: Linear.easeNone
+// });
+// tl_hand.to(path, 1, {
+//   opacity: 0
+// });
 tl_hand.to(".cls-13a", 0.2, {
   opacity: 1
 });
