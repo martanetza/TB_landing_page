@@ -6317,7 +6317,7 @@ h3 {
   font-weight: normal;
 }
 @font-face {
-  font-family: "Futura PT";
+  font-family: "Futura PT heavy";
   src: url("../fonts/futura/futura_heavy_font-webfont.woff2") format("woff2"), url("../fonts/futura/futura_heavy_font-webfont.woff") format("woff");
   font-style: normal;
   font-weight: 600;
@@ -6351,11 +6351,10 @@ h3 {
 }
 
 h1 {
-  font-family: "Futura PT medium";
+  font-family: "Futura PT heavy";
 }
 
 .banner {
-  font-weight: 400;
   margin-bottom: 40px;
   background-color: white;
   display: flex;
@@ -6560,7 +6559,6 @@ h1 {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 50%;
-    font-weight: 600;
     font-style: normal;
   }
   .navbar-collapse .navbar-nav {
@@ -6699,7 +6697,7 @@ figure.alignnone {
   }
 }
 .testimonial .section-header strong {
-  font-weight: bold;
+  font-family: "Futura PT heavy";
   background: #f8e948;
   border-radius: 5px;
 }
@@ -6965,7 +6963,7 @@ figure.alignnone {
   border-radius: 5px;
 }
 #heroModule h1 strong {
-  font-weight: bold;
+  font-family: "Futura PT heavy";
   background: #f8e948;
   border-radius: 5px;
 }
@@ -7316,6 +7314,7 @@ svg {
 
   #founderImg {
     width: 65%;
+    display: block;
     height: auto;
     margin: auto auto 30px auto;
   }
