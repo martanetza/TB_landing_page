@@ -2,11 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #d2d2d2;
-  border-radius: 25px;
+
   height: 224px;
-  margin: 20px;
-  padding: 0px;
 
   margin-bottom: 43px;
   @include media-breakpoint-down(sm) {
@@ -15,8 +12,10 @@
 }
 
 .ctaRow {
-  width: 65%; /*If h1 would wrap on desktop version, when the screen is to narrow, width of the row can be increased*/
-  margin: 0px;
+  width: 100%; /*If h1 would wrap on desktop version, when the screen is to narrow, width of the row can be increased*/
+  padding: 0px 130px;
+  background-color: #d2d2d2;
+  border-radius: 25px;
 }
 
 .cta h1 {
@@ -31,7 +30,7 @@
   background-color: #f8e948;
   border-radius: 5px;
   border: none;
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 18px;
 }
 
@@ -59,21 +58,22 @@
     line-height: 50px;
     text-align: center;
   }
-
   .cta {
-    height: 270px;
+    height: fit-content;
+  }
+  .cta .row {
+    height: fit-content;
+    padding: 30px;
   }
 
   .ctaColumn1 {
-    align-items: flex-start;
     justify-content: center;
-    height: 70%;
+    height: fit-content;
   }
 
   .ctaColumn2 {
-    align-items: flex-end;
     justify-content: center;
-    height: 30%;
+    height: fit-content;
   }
 
   .cta button {

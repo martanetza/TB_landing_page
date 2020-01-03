@@ -1,5 +1,8 @@
 .testimonial {
   margin-bottom: 76px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 46px;
+  }
   .section-header {
     width: 100%;
     text-align: center;
@@ -34,7 +37,7 @@
       @include media-breakpoint-down(sm) {
         font-size: 15px;
         line-height: 24px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -58,7 +61,7 @@
 
   .quotationMark {
     text-align: right;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 76px;
     padding: 0px;
     height: 76px;
@@ -110,6 +113,9 @@
     height: 4px;
     background: #f8e948;
     border-radius: 10px;
+    @include media-breakpoint-down(sm) {
+      margin: 26px auto auto auto;
+    }
   }
 
   .yellow-line-visible {

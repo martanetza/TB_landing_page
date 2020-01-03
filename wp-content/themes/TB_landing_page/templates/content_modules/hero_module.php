@@ -6,9 +6,7 @@
 
 <section id="heroModule" class="container-fluid">
     <div class="hero-txt">
-        <h1>
-            <?php echo $header; ?>
-        </h1>
+        <?php echo $header; ?>
         <?php echo $text; ?>
     </div>
 

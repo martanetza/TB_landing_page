@@ -18,7 +18,7 @@
             </h1>
             <?php echo $text; ?>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex text-center">
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo $image['sizes']['large']; ?>"
                 alt="Founder" id="founderImg">
         </div>
